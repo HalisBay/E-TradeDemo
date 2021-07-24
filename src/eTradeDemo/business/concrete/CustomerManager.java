@@ -24,11 +24,11 @@ public class CustomerManager implements CustomerService{
 	@Override
 	public void login(Customer customer) {
 		if(verificationService.isVerificated(customer)) {
-			System.out.println("Sisteme giriş yapıldı hoşgeldin, " + customer.getCustomerName());
+			System.out.println("Sisteme giriÅŸ yapÄ±ldÄ± hoÅŸgeldin, " + customer.getCustomerName());
 			System.out.println("------------------------------------------------------------------------------------------------");
 		}
 		else {
-			System.out.println("Sisteme giriş yapılamadı. Lütfen bilgilerinizi kontrol edin.");
+			System.out.println("Sisteme giriÅŸ yapÄ±lamadÄ±. LÃ¼tfen bilgilerinizi kontrol edin.");
 			System.out.println("-------------------------------------------------------------------------------------------------");
 		}
 		
@@ -38,13 +38,13 @@ public class CustomerManager implements CustomerService{
 	public void register(Customer customer) {
 		if(customercheckService.isValid(customer)) {
 			verificationService.sendEmail(customer);
-			System.out.println("kullanıcı sisteme eklendi : " + customer.getCustomerName() + " "+ 
+			System.out.println("kullanÄ±cÄ± sisteme eklendi : " + customer.getCustomerName() + " "+ 
 			customer.getCustomerLastName());
 			customerProductDao.customerRegister(customer);
 			
 		}
 		else {
-			System.out.println("Kayıt başarısız oldu");
+			System.out.println("kayÄ±t baÅŸarÄ±sÄ±z oldu");
 		}
 		
 	}
