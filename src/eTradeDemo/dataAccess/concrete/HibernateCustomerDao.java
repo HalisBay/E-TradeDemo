@@ -12,19 +12,19 @@ public class HibernateCustomerDao implements CustomerProductDao{
 
 	@Override
 	public void customerRegister(Customer customer) {
-		System.out.println(customer.getCustomerName() + " isimli müşteri Hbirnate ile veri tabanına kaydedilmiştir");
+		System.out.println(customer.getCustomerName() + " isimli mÃ¼Ã¾teri Hbirnate ile veri tabanÄ±na kaydedilmiÅŸtir");
 		
 	}
 
 	@Override
 	public void customerUpdate(Customer customer) {
-		System.out.println(customer.getCustomerName() + " isimli müşteri bilgilerini güncellemiştir");
+		System.out.println(customer.getCustomerName() + " isimli mÃ¼ÅŸteri bilgilerini gÃ¼ncellemiÅŸtir");
 		
 	}
 
 	@Override
 	public void customerDelete(Customer customer) {
-		System.out.println(customer.getCustomerName() + " isimli müşteri bilgilerini silmiştir");
+		System.out.println(customer.getCustomerName() + " isimli mÃ¼ÅŸteri bilgilerini silmiÅŸtir");
 		
 		
 	}
