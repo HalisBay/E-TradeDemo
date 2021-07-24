@@ -10,14 +10,14 @@ public class RegisterWithGoogleManagerAdapter implements RegisterService {
 	@Override
 	public void login(Customer customer) {
 		googleManager.googleLogin(customer.getEmail(), customer.getPassword());
-		System.out.println("Sisteme giriş yapıldı hoşgeldin " + customer.getCustomerName());
+		System.out.println("Sisteme giriÅŸ yapÄ±ldÄ± hoÃ¾geldin " + customer.getCustomerName());
 		
 	}
 
 	@Override
 	public void register(Customer customer) {
 		googleManager.googleRegister(customer.getEmail(), customer.getPassword());
-		System.out.println("Sevgili, " + customer.getCustomerName() + " Google ile kaydınız başarı ile oluşturulmuştur.");
+		System.out.println("Sevgili, " + customer.getCustomerName() + " Google ile kaydÄ±nÄ±z baÅŸarÄ± ile oluÅŸturulmuÅŸtur.");
 		
 	}
 
