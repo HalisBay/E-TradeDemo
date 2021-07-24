@@ -14,7 +14,7 @@ public class VerificationManager implements VerificationService {
 	@Override
 	public void sendEmail(Customer customer) {
 		System.out.println( "Sevgili " + customer.getCustomerName() + ", "+ 
-				customer.getEmail() + " Hesabınıza doğrulamanız için bir e posta gönderdik :)");
+				customer.getEmail() + " hesabÄ±nÄ±za doÄŸrulamanÄ±z iÃ§in bir e posta gÃ¶nderdik :)");
 		verifyEmail(customer);
 		
 	}
@@ -22,7 +22,7 @@ public class VerificationManager implements VerificationService {
 	@Override
 	public void verifyEmail(Customer customer) {
 		verificatedEmails.add(customer.getEmail());
-		System.out.println("Hesap başarı ile doğrulandı seni aramızda gördüğümüz için mutluyuz");
+		System.out.println("Hesap baÅŸarÄ±  ile doÄŸrulandÄ± seni aramÄ±zda gÃ¶rdÃ¼ÄŸÃ¼mÃ¼z iÃ§in mutluyuz");
 	}
 
 	@Override
